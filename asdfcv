@@ -1,40 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2025-10-22T18:30:00.000Z" agent="5.0 (Windows)" etag="NZNP_ASIS_Detailed" version="19.3.7" type="device">
-  <diagram id="detailed_ASIS_NZNP" name="Детальная схема AS-IS НЗНП">
-    <mxGraphModel dx="1800" dy="2200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1189" pageHeight="1682" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2025-10-22T19:30:00.000Z" agent="5.0 (Windows)" etag="NZNP_ASIS_FullDetailed" version="19.3.7" type="device">
+  <diagram id="detailed_ASIS_NZNP_full" name="Детальная схема AS-IS НЗНП - Полная">
+    <mxGraphModel dx="2000" dy="4800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1189" pageHeight="1682" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
 
-        <!-- Пример: Этап 1 -->
-
-        <!-- Основной блок этапа -->
+        <!-- 1. Поставка нефти -->
         <mxCell id="2" value="1. Поставка нефти" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe2f3;strokeColor=#2e75b6;fontSize=14;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="700" y="40" width="240" height="50" as="geometry"/>
         </mxCell>
-
-        <!-- Кто -->
         <mxCell id="3" value="Кто:
 - Поставщики
 - Транспортные организации" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#6aa84f;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="510" y="90" width="190" height="70" as="geometry"/>
         </mxCell>
-
-        <!-- Что -->
         <mxCell id="4" value="Что делают:
-- Организуют поставку нефти  
+- Организуют поставку нефти
 - Обеспечивают транспортировку" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#ca761d;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="730" y="90" width="210" height="70" as="geometry"/>
         </mxCell>
-
-        <!-- Как -->
         <mxCell id="5" value="Как делают:
-- По магистральному нефтепроводу  
+- По магистральному нефтепроводу
 - Железнодорожным транспортом" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ead1dc;strokeColor=#92278f;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="960" y="90" width="210" height="70" as="geometry"/>
         </mxCell>
-
-        <!-- Связи этап 1 -->
         <mxCell id="6" edge="1" parent="1" source="2" target="3" style="endArrow=none;strokeColor=#6aa84f;" >
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
@@ -45,41 +35,284 @@
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
-        <!-- Пример: Этап 2 -->
-
+        <!-- 2. Приём сырой нефти -->
         <mxCell id="9" value="2. Приём сырой нефти" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe2f3;strokeColor=#2e75b6;fontSize=14;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="700" y="180" width="240" height="50" as="geometry"/>
         </mxCell>
-
         <mxCell id="10" value="Кто:
 - Операторы терминала" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#6aa84f;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="510" y="230" width="190" height="70" as="geometry"/>
         </mxCell>
-
         <mxCell id="11" value="Что делают:
-- Фиксируют приём сырья  
+- Фиксируют приём сырья
 - Ведут учёт объёмов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#ca761d;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="730" y="230" width="210" height="70" as="geometry"/>
         </mxCell>
-
         <mxCell id="12" value="Как делают:
-- Полуавтоматические измерения (проточномеры, уровнемеры)  
+- Полуавтоматические измерения (проточномеры, уровнемеры)
 - Ручной учёт в журналах, Excel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ead1dc;strokeColor=#92278f;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="960" y="230" width="210" height="70" as="geometry"/>
         </mxCell>
-
-        <!-- Связи этап 2 -->
-        <mxCell id="13" edge="1" parent="1" source="9" target="10" style="endArrow=none;strokeColor=#6aa84f;" >
+        <mxCell id="13" edge="1" parent="1" source="9" target="10" style="endArrow=none;strokeColor=#6aa84f;">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="14" edge="1" parent="1" source="9" target="11" style="endArrow=none;strokeColor=#ca761d;" >
+        <mxCell id="14" edge="1" parent="1" source="9" target="11" style="endArrow=none;strokeColor=#ca761d;">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="15" edge="1" parent="1" source="9" target="12" style="endArrow=none;strokeColor=#92278f;" >
+        <mxCell id="15" edge="1" parent="1" source="9" target="12" style="endArrow=none;strokeColor=#92278f;">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
-        <!-- Добавляйте аналогично блоки для всех 11 этапов -->
+        <!-- 3. Хранение сырья -->
+        <mxCell id="16" value="3. Хранение сырья" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe2f3;strokeColor=#2e75b6;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="320" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" value="Кто:
+- Рабочие склада" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#6aa84f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="510" y="370" width="190" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="18" value="Что делают:
+- Измеряют уровень нефти
+- Проводят учёт запасов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#ca761d;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="730" y="370" width="210" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" value="Как делают:
+- Ручные измерения ультразвуковыми или механическими уровнемерами
+- Запись данных вручную" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ead1dc;strokeColor=#92278f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="960" y="370" width="210" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" edge="1" parent="1" source="16" target="17" style="endArrow=none;strokeColor=#6aa84f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="21" edge="1" parent="1" source="16" target="18" style="endArrow=none;strokeColor=#ca761d;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" source="16" target="19" style="endArrow=none;strokeColor=#92278f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 4. Лабораторный контроль сырья -->
+        <mxCell id="23" value="4. Лабораторный контроль сырья" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe2f3;strokeColor=#2e75b6;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="430" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="24" value="Кто:
+- Лаборанты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#6aa84f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="510" y="480" width="190" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="25" value="Что делают:
+- Отбирают пробы сырья
+- Проводят анализ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#ca761d;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="730" y="480" width="210" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="26" value="Как делают:
+- Ручной отбор проб и анализ
+- Заполнение бумажных протоколов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ead1dc;strokeColor=#92278f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="960" y="480" width="210" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="27" edge="1" parent="1" source="23" target="24" style="endArrow=none;strokeColor=#6aa84f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="28" edge="1" parent="1" source="23" target="25" style="endArrow=none;strokeColor=#ca761d;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="29" edge="1" parent="1" source="23" target="26" style="endArrow=none;strokeColor=#92278f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 5. Первичная переработка нефти -->
+        <mxCell id="30" value="5. Первичная переработка нефти" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe2f3;strokeColor=#2e75b6;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="560" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="31" value="Кто:
+- Операторы установок" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#6aa84f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="510" y="610" width="190" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="32" value="Что делают:
+- Управляют установками первичной переработки" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#ca761d;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="730" y="610" width="210" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="33" value="Как делают:
+- Локальный контроль через SCADA
+- Ручное или полуавтоматическое управление" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ead1dc;strokeColor=#92278f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="960" y="610" width="210" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="34" edge="1" parent="1" source="30" target="31" style="endArrow=none;strokeColor=#6aa84f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="35" edge="1" parent="1" source="30" target="32" style="endArrow=none;strokeColor=#ca761d;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="36" edge="1" parent="1" source="30" target="33" style="endArrow=none;strokeColor=#92278f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 6. Вторичная переработка и подготовка продукта -->
+        <mxCell id="37" value="6. Вторичная переработка и подготовка продукта" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe2f3;strokeColor=#2e75b6;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="690" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="38" value="Кто:
+- Операторы и технологи" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#6aa84f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="510" y="740" width="190" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="39" value="Что делают:
+- Управляют процессами вторичной переработки и подготовки" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#ca761d;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="730" y="740" width="210" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="40" value="Как делают:
+- Ручное/полуавтоматическое управление
+- Ручной лабораторный контроль" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ead1dc;strokeColor=#92278f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="960" y="740" width="210" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="41" edge="1" parent="1" source="37" target="38" style="endArrow=none;strokeColor=#6aa84f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="42" edge="1" parent="1" source="37" target="39" style="endArrow=none;strokeColor=#ca761d;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="43" edge="1" parent="1" source="37" target="40" style="endArrow=none;strokeColor=#92278f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 7. Контроль качества готовой продукции -->
+        <mxCell id="44" value="7. Контроль качества готовой продукции" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe2f3;strokeColor=#2e75b6;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="800" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="45" value="Кто:
+- Лаборанты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#6aa84f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="510" y="850" width="190" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="46" value="Что делают:
+- Выполняют контроль качества продукции
+- Оформляют отчёты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#ca761d;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="730" y="850" width="210" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="47" value="Как делают:
+- Ручное оформление отчетов
+- Использование Excel и бумажных протоколов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ead1dc;strokeColor=#92278f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="960" y="850" width="210" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="48" edge="1" parent="1" source="44" target="45" style="endArrow=none;strokeColor=#6aa84f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="49" edge="1" parent="1" source="44" target="46" style="endArrow=none;strokeColor=#ca761d;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="50" edge="1" parent="1" source="44" target="47" style="endArrow=none;strokeColor=#92278f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 8. Хранение готовой продукции -->
+        <mxCell id="51" value="8. Хранение готовой продукции" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe2f3;strokeColor=#2e75b6;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="910" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="52" value="Кто:
+- Складские работники" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#6aa84f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="510" y="960" width="190" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="53" value="Что делают:
+- Измеряют и учёты продукции
+- Управляют складом" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#ca761d;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="730" y="960" width="210" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="54" value="Как делают:
+- Ручные измерения и учёт
+- Запись в бумажных документах и Excel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ead1dc;strokeColor=#92278f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="960" y="960" width="210" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="55" edge="1" parent="1" source="51" target="52" style="endArrow=none;strokeColor=#6aa84f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="56" edge="1" parent="1" source="51" target="53" style="endArrow=none;strokeColor=#ca761d;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="57" edge="1" parent="1" source="51" target="54" style="endArrow=none;strokeColor=#92278f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 9. Планирование отгрузок -->
+        <mxCell id="58" value="9. Планирование отгрузок" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe2f3;strokeColor=#2e75b6;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1040" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="59" value="Кто:
+- Логисты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#6aa84f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1090" width="190" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="60" value="Что делают:
+- Планируют отгрузки
+- Координируют логистику" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#ca761d;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1090" width="210" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="61" value="Как делают:
+- В Excel и бумажных документах" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ead1dc;strokeColor=#92278f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="960" y="1090" width="210" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="62" edge="1" parent="1" source="58" target="59" style="endArrow=none;strokeColor=#6aa84f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="63" edge="1" parent="1" source="58" target="60" style="endArrow=none;strokeColor=#ca761d;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="64" edge="1" parent="1" source="58" target="61" style="endArrow=none;strokeColor=#92278f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 10. Отгрузка продукции -->
+        <mxCell id="65" value="10. Отгрузка продукции" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe2f3;strokeColor=#2e75b6;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1140" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="66" value="Кто:
+- Диспетчеры
+- Водители и капитаны судов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#6aa84f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1190" width="190" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="67" value="Что делают:
+- Осуществляют погрузку и отправку
+- Контроль выполнения отгрузок" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#ca761d;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1190" width="210" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="68" value="Как делают:
+- Контроль по звонкам
+- Бумажный документооборот" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ead1dc;strokeColor=#92278f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="960" y="1190" width="210" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="69" edge="1" parent="1" source="65" target="66" style="endArrow=none;strokeColor=#6aa84f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="70" edge="1" parent="1" source="65" target="67" style="endArrow=none;strokeColor=#ca761d;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="71" edge="1" parent="1" source="65" target="68" style="endArrow=none;strokeColor=#92278f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 11. Управление и поддержка -->
+        <mxCell id="72" value="11. Управление и поддержка" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe2f3;strokeColor=#2e75b6;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1320" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="73" value="Кто:
+- Руководство" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#6aa84f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1370" width="190" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="74" value="Что делают:
+- Планируют и контролируют производство
+- Формируют отчёты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#ca761d;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1370" width="210" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="75" value="Как делают:
+- Использование офисных приложений
+- Локальные ИТ-системы
+- Отчёты формируются вручную" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ead1dc;strokeColor=#92278f;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="960" y="1370" width="210" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="76" edge="1" parent="1" source="72" target="73" style="endArrow=none;strokeColor=#6aa84f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="77" edge="1" parent="1" source="72" target="74" style="endArrow=none;strokeColor=#ca761d;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="78" edge="1" parent="1" source="72" target="75" style="endArrow=none;strokeColor=#92278f;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
 
       </root>
     </mxGraphModel>
