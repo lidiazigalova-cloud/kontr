@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-10-22T12:30:00.000Z" agent="5.0 (Windows)" etag="abcdef" version="19.3.7" type="device">
+  <diagram id="IDEF0_NZNPDigital" name="A-0 Управление цифровой трансформацией">
+    <mxGraphModel dx="1106" dy="597" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- A-0 контекст -->
+        <mxCell id="2" value="A-0: Управление цифровой трансформацией НЗНП" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="160" y="60" width="500" height="100" as="geometry" />
+        </mxCell>
+        <!-- Входы слева -->
+        <mxCell id="3" value="Входы:&#10;• Текущие бизнес-процессы НЗНП&#10;• Техническое состояние оборудования&#10;• Требования бизнеса&#10;• Отчёты по текущей эффективности" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=12;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="10" y="60" width="140" height="120" as="geometry" />
+        </mxCell>
+        <!-- Выходы справа -->
+        <mxCell id="4" value="Выходы:&#10;• Цифровые технологии и системы, внедренные на заводе&#10;• Улучшенные бизнес-процессы&#10;• Повышенная эффективность производства&#10;• Уменьшение операционных рисков" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=12;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="670" y="60" width="160" height="120" as="geometry" />
+        </mxCell>
+        <!-- Механизмы снизу -->
+        <mxCell id="5" value="Механизмы (ресурсы):&#10;• Команда проекта (ИТ, технологи, руководство)&#10;• Вендоры и подрядчики цифровых решений&#10;• Бюджет проекта&#10;• Инфраструктура предприятия" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=12;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="160" y="170" width="300" height="110" as="geometry" />
+        </mxCell>
+        <!-- Управление сверху -->
+        <mxCell id="6" value="Управление:&#10;• Стратегия предприятия&#10;• План цифровой трансформации&#10;• Регламентирующие документы&#10;• Контроль качества внедрения" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=12;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="160" y="0" width="300" height="60" as="geometry" />
+        </mxCell>
+        <!-- Связи (стрелки) -->
+        <!-- Входы -->
+        <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Выходы -->
+        <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Механизмы -->
+        <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="5" target="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Управление -->
+        <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="6" target="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
