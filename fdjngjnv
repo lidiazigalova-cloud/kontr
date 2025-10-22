@@ -1,0 +1,181 @@
+from dataclasses import dataclass, field
+from typing import List, Dict, Optional
+
+
+@dataclass
+class RawMaterial:
+    volume: float  # объем сырья в тоннах
+    quality_params: Dict[str, float]  # параметры качества (например, плотность, содержание серы)
+
+
+@dataclass
+class SampleAnalysis:
+    sample_id: int
+    parameters: Dict[str, float]
+    approved: bool = False
+
+
+@dataclass
+class EquipmentStatus:
+    equipment_id: int
+    vibration: float
+    temperature: float
+    pressure: float
+    last_maintenance_date: str
+
+
+@dataclass
+class MaintenancePlan:
+    equipment_id: int
+    maintenance_date: str
+    task_description: str
+
+
+@dataclass
+class Shipment:
+    shipment_id: int
+    delivery_route: List[str]
+    estimated_arrival_time: str
+    documents_ready: bool = False
+
+
+class NZNPDigitalProcess:
+
+    def __init__(self):
+        self.raw_material_storage: List[RawMaterial] = []
+        self.laboratory_reports: List[SampleAnalysis] = []
+        self.production_log: List[Dict] = []
+        self.equipment_status_log: Dict[int, EquipmentStatus] = {}
+        self.maintenance_plans: List[MaintenancePlan] = []
+        self.shipments: List[Shipment] = []
+        self.documents: Dict[str, List] = {}
+
+    # 1. Приём и учёт сырой нефти
+    def receive_and_account_raw_material(self, raw: RawMaterial):
+        print(f"Приём сырья: объём {raw.volume} тонн, параметры качества {raw.quality_params}")
+        # IoT - данные с датчиков
+        self.raw_material_storage.append(raw)
+        # MES & ERP интеграция
+        self.update_erp_stock(raw)
+        self.order_lab_analysis(raw)
+
+    def update_erp_stock(self, raw: RawMaterial):
+        print(f"Обновление ERP: складские остатки увеличены на {raw.volume} тонн сырья")
+
+    def order_lab_analysis(self, raw: RawMaterial):
+        print("Передача задачи лаборатории на анализ проб через LIMS")
+        sample = SampleAnalysis(sample_id=len(self.laboratory_reports) + 1,
+                                parameters=raw.quality_params)  # приблизительно
+        self.laboratory_reports.append(sample)
+
+    # 2. Производственный цикл
+    def production_cycle(self, parameters: Dict[str, float]):
+        print(f"Мониторинг MES: технологические параметры {parameters}")
+        if self.detect_deviation(parameters):
+            self.notify_operator(parameters)
+        self.synchronize_erp_production_schedule()
+
+        # Журналирование
+        self.production_log.append(parameters)
+
+    def detect_deviation(self, params: Dict[str, float]) -> bool:
+        # Допустим, фиктивная проверка пределов
+        limits = {'temperature': (150, 300), 'pressure': (10, 50)}
+        for key, (low, high) in limits.items():
+            if key in params and (params[key] < low or params[key] > high):
+                print(f"Обнаружено отклонение по {key}: {params[key]}")
+                return True
+        return False
+
+    def notify_operator(self, params: Dict[str, float]):
+        print(f"Уведомление оператору о проблеме с параметрами: {params}")
+
+    def synchronize_erp_production_schedule(self):
+        print("Синхронизация данных с ERP для планирования ресурсов и материалов")
+
+    # 3. Контроль качества готовой продукции
+    def quality_control(self, sample: SampleAnalysis):
+        print(f"Автоматизация лабораторного контроля LIMS для анализа образца {sample.sample_id}")
+        sample.approved = self.evaluate_sample(sample)
+        self.digital_document_flow(sample)
+
+    def evaluate_sample(self, sample: SampleAnalysis) -> bool:
+        # Имитация проверки соответствия стандарта
+        threshold = 0.95
+        quality_score = sum(sample.parameters.values()) / len(sample.parameters)  # примерный подсчёт
+        approved = quality_score >= threshold
+        print(f"Результат анализа: {'одобрено' if approved else 'отклонено'}, балл качества: {quality_score:.2f}")
+        return approved
+
+    def digital_document_flow(self, sample: SampleAnalysis):
+        print(f"Документооборот: формирование отчёта и рассылка заинтересованным сторонам")
+        # Пример: если несоответствие — запрос корректирующих действий
+        if not sample.approved:
+            print(f"Генерация запроса на корректирующие действия для образца {sample.sample_id}")
+
+    # 4. Управление ТО и ремонтом
+    def update_equipment_status(self, status: EquipmentStatus):
+        print(f"Обновление статуса оборудования {status.equipment_id}: вибрация {status.vibration}, "
+              f"температура {status.temperature}, давление {status.pressure}")
+        self.equipment_status_log[status.equipment_id] = status
+        self.plan_predictive_maintenance(status)
+
+    def plan_predictive_maintenance(self, status: EquipmentStatus):
+        # Простая логика для прогнозного ТО
+        if status.vibration > 5.0 or status.temperature > 80:
+            plan = MaintenancePlan(equipment_id=status.equipment_id,
+                                   maintenance_date="2025-11-01",
+                                   task_description="Плановое предиктивное ТО по результатам датчиков")
+            self.maintenance_plans.append(plan)
+            print(f"Запланировано предиктивное ТО для оборудования {status.equipment_id}")
+
+    # 5. Логистика и отгрузка продукции
+    def plan_shipment(self, shipment: Shipment):
+        print(f"Планирование отгрузки #{shipment.shipment_id} по маршруту {shipment.delivery_route}")
+        shipment.documents_ready = True  # Предположим, документы сформированы
+        self.shipments.append(shipment)
+        self.gps_monitor_transport(shipment)
+
+    def gps_monitor_transport(self, shipment: Shipment):
+        print(f"GPS-мониторинг транспорта отгрузки #{shipment.shipment_id} в режиме реального времени")
+
+    # 6. Управление документацией и отчетностью
+    def manage_documents(self, doc_type: str, content):
+        print(f"Цифровой документооборот: обработка документа типа {doc_type}")
+        if doc_type not in self.documents:
+            self.documents[doc_type] = []
+        self.documents[doc_type].append(content)
+
+    def generate_reports(self):
+        print("Генерация отчетности в ERP и MES на основе актуальных данных")
+        # Итоговые сводки, KPI и др.
+
+    # Пример моделирования цикла работы
+    def run_demo(self):
+        # 1. Приём сырья
+        raw = RawMaterial(volume=1000, quality_params={'density': 0.85, 'sulfur': 0.03})
+        self.receive_and_account_raw_material(raw)
+
+        # 2. Производственный цикл
+        self.production_cycle({'temperature': 200, 'pressure': 30, 'flow_rate': 500})
+
+        # 3. Контроль качества
+        sample = self.laboratory_reports[0]
+        self.quality_control(sample)
+
+        # 4. Обновление данных о оборудовании
+        eq_status = EquipmentStatus(equipment_id=101, vibration=6.2, temperature=85, pressure=40, last_maintenance_date="2025-06-01")
+        self.update_equipment_status(eq_status)
+
+        # 5. Планирование отгрузки
+        shipment = Shipment(shipment_id=501, delivery_route=["Завод", "Склад", "Потребитель"], estimated_arrival_time="2025-10-28T14:00")
+        self.plan_shipment(shipment)
+
+        # 6. Документооборот и отчёты
+        self.manage_documents("Отчёт по качеству", sample)
+        self.generate_reports()
+
+
+if __name__ == '__main__':
+    nznp_process = NZNPDigitalProcess()
+    nznp_process.run_demo()
