@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-10-22T12:50:00.000Z" agent="5.0 (Windows)" etag="abcdefg" version="19.3.7" type="device">
+  <diagram id="IDEF0_NZNPDigital_Full" name="A-0 и A0–A7">
+    <mxGraphModel dx="1500" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Блок A-0 -->
+        <mxCell id="2" value="A-0: Управление цифровой трансформацией НЗНП" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="480" y="30" width="560" height="100" as="geometry" />
+        </mxCell>
+        <!-- Входы A-0 -->
+        <mxCell id="3" value="Входы:&#10;• Текущие бизнес-процессы НЗНП&#10;• Техническое состояние оборудования&#10;• Требования бизнеса&#10;• Отчёты по текущей эффективности" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="280" y="50" width="180" height="100" as="geometry" />
+        </mxCell>
+        <!-- Выходы A-0 -->
+        <mxCell id="4" value="Выходы:&#10;• Внедренные цифровые технологии и системы&#10;• Улучшенные бизнес-процессы&#10;• Повышенная эффективность производства&#10;• Уменьшение операционных рисков" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="50" width="220" height="100" as="geometry" />
+        </mxCell>
+        <!-- Механизмы A-0 -->
+        <mxCell id="5" value="Механизмы:&#10;• Команда проекта (ИТ, технологи, руководство)&#10;• Вендоры и подрядчики цифровых решений&#10;• Бюджет проекта&#10;• Инфраструктура предприятия" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="660" y="150" width="340" height="110" as="geometry" />
+        </mxCell>
+        <!-- Управление A-0 -->
+        <mxCell id="6" value="Управление:&#10;• Стратегия предприятия&#10;• План цифровой трансформации&#10;• Регламентирующие документы&#10;• Контроль качества внедрения" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="660" y="0" width="340" height="60" as="geometry" />
+        </mxCell>
+        <!-- Стрелки входы A-0 -->
+        <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#6c8ebf;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Стрелка выходы A-0 -->
+        <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#6c8ebf;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Стрелка механизмы A-0 -->
+        <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#6c8ebf;" edge="1" parent="1" source="5" target="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Стрелка управление A-0 -->
+        <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#6c8ebf;" edge="1" parent="1" source="6" target="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+
+        <!-- Функции A0–A7: блоки с позиционированием -->
+
+        <!-- A0: Планирование и запуск цифрового проекта -->
+        <mxCell id="20" value="A0: Планирование и запуск цифрового проекта" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="400" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- A1: Внедрение ERP-системы -->
+        <mxCell id="21" value="A1: Внедрение ERP-системы" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="580" y="200" width="320" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- A2: Внедрение MES-системы -->
+        <mxCell id="22" value="A2: Внедрение MES-системы" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="930" y="200" width="320" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- A3: Внедрение LIMS и лабораторной автоматизации -->
+        <mxCell id="23" value="A3: Внедрение LIMS и лабораторной автоматизации" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="400" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- A4: Установка IoT-датчиков и интеграция с ИС -->
+        <mxCell id="24" value="A4: Установка IoT-датчиков и интеграция с ИС" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="580" y="320" width="320" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- A5: Внедрение систем предиктивного обслуживания -->
+        <mxCell id="25" value="A5: Внедрение систем предиктивного обслуживания" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="930" y="320" width="320" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- A6: Цифровизация документооборота и мобильный доступ -->
+        <mxCell id="26" value="A6: Цифровизация документооборота и мобильный доступ" style="rounded=1;fillColor=#ffe6cc;strokeColor=#d99694;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="80" y="430" width="400" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- A7: Оптимизация логистики и транспортного контроля -->
+        <mxCell id="27" value="A7: Оптимизация логистики и транспортного контроля" style="rounded=1;fillColor=#ffe6cc;strokeColor=#d99694;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="580" y="430" width="670" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Соединения из A-0 к функциям A0–A7 как выходы (причём символизирующие, что A-0 детализируется этими функциями) -->
+        <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#6c8ebf;" edge="1" parent="1" source="2" target="20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="31" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#6c8ebf;" edge="1" parent="1" source="2" target="21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#6c8ebf;" edge="1" parent="1" source="2" target="22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#6c8ebf;" edge="1" parent="1" source="2" target="23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#6c8ebf;" edge="1" parent="1" source="2" target="24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#6c8ebf;" edge="1" parent="1" source="2" target="25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="36" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#6c8ebf;" edge="1" parent="1" source="2" target="26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#6c8ebf;" edge="1" parent="1" source="2" target="27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Для компактности к каждой функции можно добавить подписи Вход/Выход/Управление/Механизмы (но для наглядности в комментариях) -->
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
